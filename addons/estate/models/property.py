@@ -1,3 +1,4 @@
+from datetime import date, timedelta
 from odoo import fields, models
 
 class RealEstateProperty(models.Model):
@@ -7,7 +8,7 @@ class RealEstateProperty(models.Model):
     name = fields.Char('Title', required=True)
     description = fields.Text('Description', required=False)
     postcode = fields.Char('Postcode', required=True)
-    date_availability = fields.Date('Available From', required=False, copy=False)
+    date_availability = fields.Date('Available From', required=False, copy=False, default=lambda self: date.today()+timedelta(days=90))
     expected_price = fields.Float('Expected Price', required=True)
     selling_price = fields.Float('Selling Price', required=False, default=0.0, readonly=True)
     bedrooms = fields.Integer('Bedrooms', default=1)
