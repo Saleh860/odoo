@@ -6,6 +6,7 @@ class RealEstateProperty(models.Model):
     _description = 'Real Estate Properties'
     
     name = fields.Char('Title', required=True)
+    active = fields.Boolean('Active', default=False)
     description = fields.Text('Description', required=False)
     postcode = fields.Char('Postcode', required=True)
     date_availability = fields.Date('Available From', required=False, copy=False, default=lambda self: date.today()+timedelta(days=90))
