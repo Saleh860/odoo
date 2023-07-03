@@ -2,7 +2,8 @@ from odoo import fields, models
 
 class RealEstateProperty(models.Model):
     _name = 'estate.property'
-
+    _description = 'Real Estate Properties'
+    
     name = fields.Char('Title', required=True)
     description = fields.Text('Description', required=False)
     postcode = fields.Char('Postcode', required=True)
