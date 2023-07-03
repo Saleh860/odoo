@@ -7,6 +7,10 @@ class RealEstateProperty(models.Model):
     
     name = fields.Char('Title', required=True)
     active = fields.Boolean('Active', default=False)
+    state = fields.Selection([('N', 'New'), ('R', 'Offer Received'), 
+                              ('A', 'Offer Accepted'), ('S', 'Sold'), 
+                              ('C', 'Canceled')], 'State', required=True, 
+                              copy=False, default='N')
     description = fields.Text('Description', required=False)
     postcode = fields.Char('Postcode', required=True)
     date_availability = fields.Date('Available From', required=False, copy=False, default=lambda self: date.today()+timedelta(days=90))
