@@ -4,6 +4,9 @@
     'depends': [
         'base',
     ],
+    'data': [
+        'views/estate_property_views.xml',
+    ],
     'installable': True,
     'application': True,
 }
