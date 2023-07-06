@@ -1,5 +1,6 @@
 {
     'name':'Real Estate',
+    'author': 'Odoo Mates',
     'depends':[
         'base'
     ],
