@@ -1,5 +1,6 @@
 {
     'name':'Real Estate',
+    'license': 'LGPL-3',
     'author': 'Odoo Mates',
     'website': 'www.odoomatest.tech',
     'summary': 'odoo 16 Development',
