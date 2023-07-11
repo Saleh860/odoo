@@ -8,6 +8,7 @@
         'base'
     ],
     'data': [
+        'views/menu.xml',
         'security/ir.model.access.csv',
         'views/estate_property_views.xml',
     ],
