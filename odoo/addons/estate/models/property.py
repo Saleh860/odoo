@@ -2,7 +2,7 @@ from odoo import models , fields
 
 class test_azzuz(models.Model):
 
-    _name = "test.azzuz"
+    _name = "estate.property"
 
     _description = "Test model"
 
