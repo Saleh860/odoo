@@ -17,6 +17,7 @@ class RealEstateProperty(models.Model):
     facades = fields.Integer('Facades',default=0)
     garage = fields.Boolean('Garage', default=False)
     garden = fields.Boolean('Garden', default=False)
+    permissible_age= fields.Boolean('Over 18', default=False)
     garden_area = fields.Integer('Garden Area', required=False)
     garden_orientation = fields.Selection(
         [('N', 'North'), ('S','South'),('E','East'),('W','West')], 
