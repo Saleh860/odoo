@@ -16,10 +16,10 @@
         <field name="model">estate.property</field>
         <field name="arch" type='xml'>
           <form>
+          <sheet>
             <search string="Tests">
                 <field name="name"/>
             </search>
-          <sheet>
             <group>
             <group>
             <field name="name"/>
