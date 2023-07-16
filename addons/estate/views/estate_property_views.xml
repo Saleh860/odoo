@@ -18,10 +18,14 @@
           <form>
           <sheet>
             <group>
-                <field name="name"/>
-                <field name="expected_price"/>
-                <field name="garage"/>
-                <field name="garden"/>
+                <group>
+                    <field name="name"/>
+                    <field name="expected_price"/>
+                </group>
+                <group>
+                    <field name="garage"/>
+                    <field name="garden"/>
+                </group>
             </group>
           </sheet>
           </form>
