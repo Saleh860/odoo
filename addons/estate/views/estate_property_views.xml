@@ -22,7 +22,6 @@
                 <field name="expected_price"/>
                 <field name="garage"/>
                 <field name="garden"/>
-                <field name="Age"/>
             </group>
           </sheet>
           </form>
@@ -37,7 +36,6 @@
            <field name="expected_price"/>
            <field name="garage"/>
            <field name="garden"/>
-            <field name="Age"/>
            </tree>
         </field>
     </record>
