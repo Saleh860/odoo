@@ -15,18 +15,16 @@
         <field name="name">estate.from</field>
         <field name="model">estate.property</field>
         <field name="arch" type='xml'>
-        <from>
-
-        </from>
+          <form>
+          </form>
         </field>
     </record>
     <record id="view_estate_tree" model="ir.ui.view">
         <field name="name">estate.tree</field>
         <field name="model">estate.property</field>
         <field name="arch" type='xml'>
-        <tree>
-
-        </tree>
+           <tree>
+           </tree>
         </field>
     </record>
     <menuitem id="estate_menu_root" name="Real Estate">
