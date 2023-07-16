@@ -11,6 +11,24 @@
             </p>
         </field>
     </record>
+    <record id="view_estate_from" model="ir.ui.view">
+        <field name="name">estate.from</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type='xml'>
+        <from>
+
+        </from>
+        </field>
+    </record>
+    <record id="view_estate_tree" model="ir.ui.view">
+        <field name="name">estate.tree</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type='xml'>
+        <tree>
+
+        </tree>
+        </field>
+    </record>
     <menuitem id="estate_menu_root" name="Real Estate">
         <menuitem id="estate_advertisement_menu" name="Advertisements">
             <menuitem id="estate_property_menu_action" action="estate_property_default_action"/>
