@@ -18,7 +18,6 @@
           <form>
             <search string="Tests">
                 <field name="name"/>
-                <field name="selling_price"/>
             </search>
           <sheet>
             <group>
